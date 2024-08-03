@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "bacen-interest-rate-history"
+version = "0.1.0"
+description = ""
+authors = ["tonsatomicos"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+pandas = "^2.2.2"
+selenium = "^4.23.1"
+lxml = "^5.2.2"
+sqlalchemy = "^2.0.31"
+psycopg2-binary = "^2.9.9"
+pyodbc = "^5.1.0"
+loguru = "^0.7.2"
+pandera = "^0.20.3"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.0"
+black = "^24.4.2"
+isort = "^5.13.2"
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

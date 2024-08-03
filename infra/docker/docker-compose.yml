@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: BACEN
+    ports:
+      - "5437:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - C:/Users/ant4res/Desktop/bacen-interest-rate-history/sql/create_table_postgres.sql:/docker-entrypoint-initdb.d/init.sql
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: sqlserver
+    environment:
+      - SA_PASSWORD=Teste!1234
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+    volumes:
+      - C:/Users/ant4res/Desktop/bacen-interest-rate-history/sql/create_table_mssql.sql:/create_table_mssql.sql
+      - .entrypoint.sh:/entrypoint.sh
+    entrypoint: /entrypoint.sh
+volumes:
+  postgres-data:
