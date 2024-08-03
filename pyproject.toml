@@ -23,6 +23,7 @@ black = "^24.4.2"
 isort = "^5.13.2"
 ipykernel = "^6.29.5"
 matplotlib = "^3.9.1"
+pre-commit = "^3.8.0"
 
 [build-system]
 requires = ["poetry-core"]

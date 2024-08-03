@@ -1,7 +1,7 @@
 # <p align="center">Projeto de Web Mining & Crawler Scraping<br>Bacen - Histórico das Taxas de Juros</p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>     
+<img src="http://img.shields.io/static/v1?label=LICENCA&message=...&color=GREEN&style=for-the-badge"/>
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
@@ -43,6 +43,7 @@ Este projeto foi desenvolvido utilizando Poetry e Pyenv para gerenciamento da ve
 - isort
 - ipykernel
 - matplotlib
+- pre-commit
 
 ### Instalação das Dependências
 
@@ -74,7 +75,7 @@ Os scripts SQL disponibilizados em <code>./sql/</code> inclui o esquema da tabel
 Nas linhas 10 e 11 do script <code>./bacen-interest-rate-history/bacen-interest-rate-history/core/main.py</code> existe a criação do objeto engine para os bancos <code>PostgreSQL</code> e <code>SQL Server</code>, basta configurar na ordem:
 
 - Banco para persistência
-    - Consulte o arquivo <code>./bacen-interest-rate-history/bacen-interest-rate-history/core/utils/db_engine.py</code> para verificar os bancos suportados. 
+    - Consulte o arquivo <code>./bacen-interest-rate-history/bacen-interest-rate-history/core/utils/db_engine.py</code> para verificar os bancos suportados.
 - IP do banco
 - Usuário
 - Senha
