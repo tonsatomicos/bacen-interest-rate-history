@@ -9,22 +9,22 @@ Este projeto foi concebido como parte de um desafio durante a disciplina de Web 
 
 O desafio consistia em desenvolver um scraper no site de nossa escolha, extrair e retornar os dados. Optei por raspar o histórico de taxas de juros básicas do BACEN.
 
-Para realizar esse processo, utilizei o Selenium para a raspagem de dados, o pandas para transformação e o SQLAlchemy ORM para persistência em banco de dados. O SQLAlchemy controlou o modelo de dados e realizou insert e update conforme necessário.
+Para realizar esse processo, utilizei <code>Selenium</code> para a raspagem de dados, <code>Pandas</code> para transformação, <code>Pandera</code> para qualidade de dados e <code>SQLAlchemy ORM</code> para persistência, realizando insert e update conforme necessário.
 
 ## Etapas
 
 ![Descrição da Imagem](https://github.com/tonsatomicos/bacen-interest-rate-history/blob/main/assets/estrutura.png?raw=true)
 
-## Dependências do Projeto
+## Estrutura
 
-Este projeto foi desenvolvido utilizando Poetry e Pyenv para gerenciamento da versão do Python, ambientes virtuais e bibliotecas.
+Utilizando <code>Poetry</code> para gerenciamento de ambientes virtuais e dependências, e <code>Pyenv</code> para o controle de versão.
 
 ### Versão do Python
 ```bash
 3.11.9
 ```
 
-### Bibliotecas | Produção
+### Dependências | Produção
 
 - selenium
 - pandas
@@ -36,7 +36,7 @@ Este projeto foi desenvolvido utilizando Poetry e Pyenv para gerenciamento da ve
 - pyodbc
 - loguru
 
-### Bibliotecas | Desenvolvimento
+### Dependências | Desenvolvimento
 
 - flake8
 - black
